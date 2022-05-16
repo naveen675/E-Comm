@@ -28,7 +28,7 @@ db.connect({username,password,database}).then(() => {
     })
     ,api);
     
-}).catch((err) => {
+}).then(() => {console.log('Mongo Db Connection Success')}).catch((err) => {
     console.log(`MongoDb connection Unsuccessful ${err}`);
 
 })

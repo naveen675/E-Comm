@@ -7,6 +7,7 @@ const products = new Schema({
 
     title : String,
     brand : String,
+    type : String,
     price : String,
     image_url : String,
     demo_url : String,
