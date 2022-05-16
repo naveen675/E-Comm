@@ -1,0 +1,8 @@
+user_cred -> _id, username, password,
+profile -> user_id, username, firstname, lastname, email, addresses (array),image_url,
+products -> _id,brand,price, discount_rate, image_url, demo_url, year, About
+reviews -> product_id,reviews(user_id,username,comment),
+rating -> product_id, average_rating, ratings(user_id,username,rating), 
+cart -> user_id, product_id's(product_id, quantity),
+bought_history -> user_id, products(product_id, price, quantity,transaction_id)
+transactions -> transaction_id,purchase_date,amount
